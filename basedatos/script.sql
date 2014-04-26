@@ -1,6 +1,6 @@
-create database senatga;
+create database dbbeautisurprise;
 
-use senatga;
+use dbbeautisurprise;
 
 create table usuarios(
 usuario varchar(20),

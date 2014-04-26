@@ -3,8 +3,7 @@
 	$usuario=$_POST['usu'];
 	$contrasena=$_POST['con'];
 
-	$db = mysql_connect("localhost", "root",""); // Conecta la base de datos
-	mysql_select_db("dbbeautisurprise",$db);// Seleccion la base de datos correcta
+	include 'conexion.php';
 
 	$sql = "select * from usuarios where usuario='$usuario' and contrasena='$contrasena'";
 
