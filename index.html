@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width">
+	    <link rel="stylesheet" href="css/foundation.css" />
+	    <script src="js/vendor/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="row">
+			  <nav class="top-bar" data-topbar>
+			    <ul class="title-area">
+			      <li class="name">
+			        <h1><a href="#">Proyecto</a></h1>
+			      </li>
+			      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+			    </ul>			
+			  </nav>
+		</div>
+		<br>
+		<div class="row">
+			<div class="large-4 columns">
+				<fieldset class="panel radius">
+					<legend>Inicio Sesión</legend>
+					<form action="login.php" method="post">
+						<div class="row">
+							<div class="large-4 columns">
+								<label class="right" for="">Usuario</label>
+							</div>
+							<div class="large-8 columns">
+								<input type="text" name="usu" value="" placeholder="Usuario">
+							</div>
+						</div>
+						<div class="row">
+							<div class="small-6 large-4 columns">
+								<label class="right" for="">Contraseña</label>
+							</div>
+							<div class="large-8 columns">
+								<input type="password" name="con" value="" placeholder="Contraseña">
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+								<input type="submit" name="" value="Entrar" class="button expand">
+
+							</div>
+						</div>
+					</form>
+					
+				</fieldset>
+			</div>
+			<div class="large-8 columns">
+				Descripción del sistema de información
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, nisi, ab saepe odio fugit eligendi provident minus labore id quis? Nemo, quas quaerat eveniet atque praesentium debitis dolorum natus vel.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, necessitatibus, saepe, facilis, blanditiis cum asperiores quasi ad ipsam at amet hic dolorem officia deserunt nesciunt doloribus culpa natus voluptatum suscipit.
+			</div>
+		</div>
+		<div class="row">
+			<large-12 class="columns">
+				<ul class="example-orbit" data-orbit>
+				  <li>
+				    <img src="imagenes/banners3.jpg" alt="slide 1" />
+				    <div class="orbit-caption">
+				      Caption One.
+				    </div>
+				  </li>
+				  <li>
+				    <img src="imagenes/banners4.jpg" alt="slide 2" />
+				    <div class="orbit-caption">
+				      Caption Two.
+				    </div>
+				  </li>
+				  <li>
+				    <img src="imagenes/banners6.jpg" alt="slide 3" />
+				    <div class="orbit-caption">
+				      Caption Three.
+				    </div>
+				  </li>
+				  <li>
+				    <img src="imagenes/banners7.jpg" alt="slide 4" />
+				    <div class="orbit-caption">
+				      Caption Three.
+				    </div>
+				  </li>
+				  <li>
+				    <img src="imagenes/banners8.jpg" alt="slide 5" />
+				    <div class="orbit-caption">
+				      Caption Three.
+				    </div>
+				  </li>
+
+				</ul>
+			</large-12>
+		</div>
+		<footer class="row">
+			<div class="large-12 olumns">
+				<hr/>
+				<div class="row">
+					<div class="large-6 columns">
+						<p>© Copyright no one at all. Go to town.</p>
+					</div>
+					<div class="large-6 columns">
+						<ul class="inline-list right">
+				            <li><a href="#">Link 1</a></li>
+				            <li><a href="#">Link 2</a></li>
+				            <li><a href="#">Link 3</a></li>
+				            <li><a href="#">Link 4</a></li>
+				          </ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.orbit.js"></script>
+		<script>
+			$(document).foundation({
+			  orbit: {
+				animation: 'slide',
+				    timer_speed: 1000,
+				    pause_on_hover: true,
+				    animation_speed: 500,
+				    navigation_arrows: true,
+				    bullets: false			  }
+			});
+		</script>
+	</body>
+</html>
