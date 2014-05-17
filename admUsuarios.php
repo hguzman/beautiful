@@ -35,10 +35,8 @@
 		<div class="row">
 			<div class="large-2 columns panel">
 				<ul class="side-nav">
-				  <li><a href="admUsuarios.php">Usuarios</a></li>
-				  <li><a href="#">Personal</a></li>
-				  <li><a href="#">Roles</a></li>
-				  <li><a href="#">Habilitar</a></li>
+				  <li><a href="nuevoUsuario.php">Nuevo Usuario</a></li>
+				  <li><a href="#">Listar Usuarios</a></li>
 				</ul>				
 			</div>
 			<div class="large-10 columns">

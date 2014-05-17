@@ -35,16 +35,39 @@
 		<div class="row">
 			<div class="large-2 columns panel">
 				<ul class="side-nav">
-				  <li><a href="admUsuarios.php">Usuarios</a></li>
-				  <li><a href="#">Personal</a></li>
-				  <li><a href="#">Roles</a></li>
-				  <li><a href="#">Habilitar</a></li>
+				  <li><a href="#">Guardar</a></li>
+				  <li><a href="#">Regresar</a></li>
 				</ul>				
 			</div>
 			<div class="large-10 columns">
-				Que opciones existen dentro de administración
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, unde, eligendi odit harum mollitia quibusdam aut asperiores dolorem error sed obcaecati atque laudantium vero provident vitae quam repudiandae voluptatem optio.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, eveniet, iusto, doloribus molestiae vero illum magni unde enim ut blanditiis similique voluptatum ducimus voluptates totam officiis quasi quos esse ab!
+				<p>Descripción de las opciones de administración de usuarios</p>
+				<form action="codigo/guardarUsuario.php" method="post">
+					<div class="row">
+					    <div class="large-12 columns">
+					      <label>Usuario
+					        <input type="text" placeholder="Nombre Usuario" name="usu"/>
+					      </label>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="large-12 columns">
+					      <label>Contraseña
+					        <input type="password" placeholder="Contraseña" name="con"/>
+					      </label>
+					    </div>
+					</div>
+				  <div class="row">
+				    <div class="large-12 columns">
+				      <label>Perfil de Usuario
+				        <select name="per">
+				          <option value="1">Administrador</option>
+				          <option value="2">General</option>
+				        </select>
+				      </label>
+				    </div>
+				  </div>
+				  <input type="submit" value="Guardar Usuario" class="button expand">
+				</form>
 			</div>
 		</div>
 		<footer class="row">
