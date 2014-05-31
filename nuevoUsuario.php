@@ -46,7 +46,7 @@
 					    <div class="large-12 columns">
 					      <label>Usuario
 					        <input type="text" placeholder="Nombre Usuario" name="usu"/>
-					      </label>
+					      </label>					      
 					    </div>
 					</div>
 					<div class="row">

@@ -33,6 +33,8 @@
 		<meta name="viewport" content="width=device-width">
 	    <link rel="stylesheet" href="css/foundation.css" />
 	    <script src="js/vendor/modernizr.js"></script>
+	    <script src="js/vendor/jquery.js"></script>
+	    <script src="js/misjs/menu.js"></script>
 	</head>
 	<body>
 		<div class="row">
@@ -60,6 +62,7 @@
 			<div class="large-2 columns panel">
 				<ul class="side-nav">
 				  <li><a href="administracion.php">Administración</a></li>
+				  <li><a href="#" id="admin">Administración2</a></li>
 				<?php
 					if ($perfil==1){
 				?>
