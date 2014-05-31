@@ -30,11 +30,11 @@ $result = mysql_query($sql);
 				<section class="top-bar-section">
 				    <!-- Right Nav Section -->
 				    <ul class="right">				      
-				      <li class="active"><a href="cerrarsesion.php">Cerrar Sesión</a></li>
+				      <li class="active"><a href="../../cerrarsesion.php">Cerrar Sesión</a></li>
 				    </ul>
 				<!-- Left Nav Section -->
 				    <ul class="left">
-				      <li><a href="#"><?php echo $usuario ?></a></li>
+				      <li><a href="#"><?= $_SESSION["nomusuario"] ?></a></li>
 				    </ul>
 				</section>			    			
 			  </nav>

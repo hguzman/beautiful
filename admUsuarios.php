@@ -26,7 +26,7 @@
 				    </ul>
 				<!-- Left Nav Section -->
 				    <ul class="left">
-				      <li><a href="#"><?php echo $usuario ?></a></li>
+				      <li><a href="#"><?= $_SESSION["nomusuario"] ?></a></li>
 				    </ul>
 				</section>			    			
 			  </nav>
