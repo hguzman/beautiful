@@ -48,37 +48,43 @@ $result = mysql_query($sql);
 			  </nav>
 		</div>
 		<br>
-		<div class="row">
-			<div class="large-4 columns panel">
-				<label for="">Usuario</label>
-				<label for=""><b><?= $usuario ?></b></label>
-				<label for="">Perfil</label>
-				<label for=""><b><?= $perfil ?></b></label>
-			</div>
-		</div>		
-		<div class="row">
 			<?php
 				if ($result){
 			?>
-				<div data-alert class="alert-box success radius">
-					Registro Guardado de marea correcta
-				  <a href="#" class="close">&times;</a>
+				<div class="row">
+					<div class="large-4 columns panel">
+						<label for="">Usuario</label>
+						<label for=""><b><?= $usuario ?></b></label>
+						<label for="">Perfil</label>
+						<label for=""><b><?= $perfil ?></b></label>
+					</div>
+					<a href="../admUsuarios.php">Regresar</a>
+					
+				</div>
+				<div class="row">
+					<div data-alert class="alert-box success radius">
+						Registro Guardado de marea correcta
+					  <a href="#" class="close">&times;</a>
+					</div>
+					
 				</div>
 
 			<?php
 				}else{
 			?>
-				<div data-alert class="alert-box alert radius">
-					Problemas al intentar Guardar
-		    	  <a href="#" class="close">&times;</a>
+				<div class="row">
+					<a href="../admUsuarios.php">Regresar</a>
+
+					<div data-alert class="alert-box alert radius">
+						Problemas al intentar Guardar
+			    	  <a href="#" class="close">&times;</a>
+					</div>
+					
 				</div>
 			<?php
 				}
 			?>			
-		</div>
-		<div class="row">
-			
-		</div>		
+
 		<footer class="row">
 			<div class="large-12 olumns">
 				<hr/>

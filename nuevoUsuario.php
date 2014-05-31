@@ -33,14 +33,7 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="large-2 columns panel">
-				<ul class="side-nav">
-				  <li><a href="#">Guardar</a></li>
-				  <li><a href="#">Regresar</a></li>
-				</ul>				
-			</div>
-			<div class="large-10 columns">
-				<p>Descripción de las opciones de administración de usuarios</p>
+			<div class="large-6 columns">
 				<form action="codigo/guardarUsuario.php" method="post">
 					<div class="row">
 					    <div class="large-12 columns">

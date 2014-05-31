@@ -62,7 +62,6 @@
 			<div class="large-2 columns panel">
 				<ul class="side-nav">
 				  <li><a href="administracion.php">Administración</a></li>
-				  <li><a href="#" id="admin">Administración2</a></li>
 				<?php
 					if ($perfil==1){
 				?>

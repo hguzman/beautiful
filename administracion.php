@@ -37,8 +37,6 @@
 				<ul class="side-nav">
 				  <li><a href="admUsuarios.php">Usuarios</a></li>
 				  <li><a href="#">Personal</a></li>
-				  <li><a href="#">Roles</a></li>
-				  <li><a href="#">Habilitar</a></li>
 				</ul>				
 			</div>
 			<div class="large-10 columns">
