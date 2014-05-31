@@ -1,5 +1,13 @@
 <?php
-	include("seguridad.php");
+	include("../../seguridad.php");
+
+	include("../../conexion.php"); // esto conecta con la base de datos
+
+
+$sql ="select * from personas";
+
+$result = mysql_query($sql);
+
 ?>
 <!doctype html>
 <html lang="es">
@@ -7,8 +15,8 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width">
-	    <link rel="stylesheet" href="css/foundation.css" />
-	    <script src="js/vendor/modernizr.js"></script>
+	    <link rel="stylesheet" href="../../css/foundation.css" />
+	    <script src="../../js/vendor/modernizr.js"></script>
 	</head>
 	<body>
 		<div class="row">
@@ -22,7 +30,7 @@
 				<section class="top-bar-section">
 				    <!-- Right Nav Section -->
 				    <ul class="right">				      
-				      <li class="active"><a href="cerrarsesion.php">Cerrar Sesión</a></li>
+				      <li class="active"><a href="../../cerrarsesion.php">Cerrar Sesión</a></li>
 				    </ul>
 				<!-- Left Nav Section -->
 				    <ul class="left">
@@ -33,16 +41,36 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="large-2 columns panel">
-				<ul class="side-nav">
-				  <li><a href="admUsuarios.php">Usuarios</a></li>
-				  <li><a href="admPersonas.php">Personal</a></li>
-				</ul>				
-			</div>
 			<div class="large-10 columns">
-				Que opciones existen dentro de administración
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, unde, eligendi odit harum mollitia quibusdam aut asperiores dolorem error sed obcaecati atque laudantium vero provident vitae quam repudiandae voluptatem optio.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, eveniet, iusto, doloribus molestiae vero illum magni unde enim ut blanditiis similique voluptatum ducimus voluptates totam officiis quasi quos esse ab!
+				<h1>Listado Personas</h1>
+				<table>
+				  <thead>
+				    <tr>
+				      <th width="200">Cedula</th>
+				      <th width="150">Nombre</th>
+				      <th >Dirección</th>
+				      <th >Telefono</th>
+				      <th colspan="2">Operaciones</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				  	<?php
+					  	while ($row = mysql_fetch_row($result)){ 
+					?>
+					    <tr>
+					      <td><?= $row[0] ?></td>
+					      <td><?= $row[1] ?></td>					      
+					      <td><?= $row[2] ?></td>					      
+					      <td><?= $row[3] ?></td>					      
+					      <td><a href="#">Editar</a></td>					      
+					      <td><a href="eliminaPersona.php?id=<?php echo $row[0]; ?>">Eliminar</a></td>					      
+					    </tr>					
+					<?php
+						} 
+					?>
+				  </tbody>
+				</table>
+				<a href="../../admUsuarios">Regresar</a>
 			</div>
 		</div>
 		<footer class="row">

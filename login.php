@@ -22,7 +22,7 @@
 		$fila = mysql_fetch_assoc($rs);
 		$_SESSION["autentificado"] ="SI"; //guarda la variable de sesion
 		$_SESSION["nomusuario"] =$usuario; //guarda la variable de sesion	
-		$perfil=$row["perfil"];
+		$perfil=$fila["perfil"];
 	}
 
 ?>

@@ -3,11 +3,12 @@
 	include("../seguridad.php");
 	include("../conexion.php"); // esto conecta con la base de datos
 
-	$usuario=$_POST["usu"];
-	$cont=$_POST["con"];
-	$perfil=$_POST["per"];
+	$cedula=$_POST["ced"];
+	$nombre=$_POST["nom"];
+	$direccion=$_POST["dir"];
+	$telefono=$_POST["tel"];
 
-$sql ="insert into usuarios value(UPPER('$usuario'),'$cont','$perfil')";
+$sql ="insert into personas value($cedula,'$nombre','$direccion',$telefono)";
 //echo $sql;
 $result = mysql_query($sql);
 ?>
@@ -53,10 +54,14 @@ $result = mysql_query($sql);
 			?>
 				<div class="row">
 					<div class="large-4 columns panel">
-						<label for="">Usuario</label>
-						<label for=""><b><?= $usuario ?></b></label>
-						<label for="">Perfil</label>
-						<label for=""><b><?= $perfil ?></b></label>
+						<label for="">Cedula</label>
+						<label for=""><b><?= $cedula ?></b></label>
+						<label for="">Nombre</label>
+						<label for=""><b><?= $nombre ?></b></label>
+						<label for="">Dirección</label>
+						<label for=""><b><?= $direccion ?></b></label>
+						<label for="">Telefono</label>
+						<label for=""><b><?= $telefono ?></b></label>
 					</div>
 					<a href="../admUsuarios.php">Regresar</a>
 					

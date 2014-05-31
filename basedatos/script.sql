@@ -16,6 +16,13 @@ create table usuarios(
 	FOREIGN KEY(perfil) REFERENCES perfiles(perfil)
 );
 
+create table personas(
+	cedula bigint,
+	nombre varchar(50) not null,
+	direccion varchar(100),
+	telefono bigint,
+	primary key(cedula)
+);
 
 
 insert into perfiles (nombrePerfil) value("ADMINISTRADOR");

@@ -59,7 +59,7 @@ $result = mysql_query($sql);
 					      <td><?= $row[0] ?></td>
 					      <td><?= $row[2] ?></td>					      
 					      <td><a href="#">Editar</a></td>					      
-					      <td><a href="#">Eliminar</a></td>					      
+					      <td><a href="eliminarUsuario.php?id=<?php echo $row[0]; ?>">Eliminar</a></td>					      
 					    </tr>					
 					<?php
 						} 
@@ -78,10 +78,10 @@ $result = mysql_query($sql);
 					</div>
 					<div class="large-6 columns">
 						<ul class="inline-list right">
-				            <li><a href="#">Opción 1</a></li>
+				            <li><a href="../../admUsuarios.php">Menu Usuarios</a></li>
+				            <li><a href="../../nuevoUsuario.php">Crear Usuario</a></li>
 				            <li><a href="#">Opción 2</a></li>
 				            <li><a href="#">Opción 3</a></li>
-				            <li><a href="#">Opción 4</a></li>
 				          </ul>
 					</div>
 				</div>

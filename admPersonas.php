@@ -33,34 +33,16 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="large-6 columns">
-				<form action="codigo/guardarUsuario.php" method="post">
-					<div class="row">
-					    <div class="large-12 columns">
-					      <label>Usuario
-					        <input type="text" placeholder="Nombre Usuario" name="usu"/>
-					      </label>					      
-					    </div>
-					</div>
-					<div class="row">
-					    <div class="large-12 columns">
-					      <label>Contraseña
-					        <input type="password" placeholder="Contraseña" name="con"/>
-					      </label>
-					    </div>
-					</div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Perfil de Usuario
-				        <select name="per">
-				          <option value="1">Administrador</option>
-				          <option value="2">General</option>
-				        </select>
-				      </label>
-				    </div>
-				  </div>
-				  <input type="submit" value="Guardar Usuario" class="button expand">
-				</form>
+			<div class="large-2 columns panel">
+				<ul class="side-nav">
+				  <li><a href="nuevoPersona.php">Nueva Persona</a></li>
+				  <li><a href="codigo/personas/listarPersonas.php">Listar Personas</a></li>
+				</ul>				
+			</div>
+			<div class="large-10 columns">
+				Que opciones existen dentro de administración
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, unde, eligendi odit harum mollitia quibusdam aut asperiores dolorem error sed obcaecati atque laudantium vero provident vitae quam repudiandae voluptatem optio.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, eveniet, iusto, doloribus molestiae vero illum magni unde enim ut blanditiis similique voluptatum ducimus voluptates totam officiis quasi quos esse ab!
 			</div>
 		</div>
 		<footer class="row">
@@ -72,7 +54,7 @@
 					</div>
 					<div class="large-6 columns">
 						<ul class="inline-list right">
-				            <li><a href="codigo/usuarios/listarUsuarios.php">Listar Usuario</a></li>
+				            <li><a href="#">Opción 1</a></li>
 				            <li><a href="#">Opción 2</a></li>
 				            <li><a href="#">Opción 3</a></li>
 				            <li><a href="#">Opción 4</a></li>

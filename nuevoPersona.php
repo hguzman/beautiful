@@ -34,31 +34,36 @@
 		<br>
 		<div class="row">
 			<div class="large-6 columns">
-				<form action="codigo/guardarUsuario.php" method="post">
+				<form action="codigo/guardarPersona.php" method="post">
 					<div class="row">
 					    <div class="large-12 columns">
-					      <label>Usuario
-					        <input type="text" placeholder="Nombre Usuario" name="usu"/>
+					      <label>Cedula
+					        <input type="text" placeholder="Cedula" name="ced"/>
 					      </label>					      
 					    </div>
 					</div>
 					<div class="row">
 					    <div class="large-12 columns">
-					      <label>Contraseña
-					        <input type="password" placeholder="Contraseña" name="con"/>
+					      <label>Nombre
+					        <input type="text" placeholder="Nombre" name="nom"/>
 					      </label>
 					    </div>
 					</div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Perfil de Usuario
-				        <select name="per">
-				          <option value="1">Administrador</option>
-				          <option value="2">General</option>
-				        </select>
-				      </label>
-				    </div>
-				  </div>
+					<div class="row">
+					    <div class="large-12 columns">
+					      <label>Dirección
+					        <input type="text" placeholder="Dirección" name="dir"/>
+					      </label>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="large-12 columns">
+					      <label>Telefono
+					        <input type="text" placeholder="Contraseña" name="tel"/>
+					      </label>
+					    </div>
+					</div>
+
 				  <input type="submit" value="Guardar Usuario" class="button expand">
 				</form>
 			</div>
@@ -72,7 +77,7 @@
 					</div>
 					<div class="large-6 columns">
 						<ul class="inline-list right">
-				            <li><a href="codigo/usuarios/listarUsuarios.php">Listar Usuario</a></li>
+				            <li><a href="#">Opción 1</a></li>
 				            <li><a href="#">Opción 2</a></li>
 				            <li><a href="#">Opción 3</a></li>
 				            <li><a href="#">Opción 4</a></li>
